@@ -1,8 +1,8 @@
-#e-crawler
+# e-crawler
 
 Web crawler to extract e-mails from website
 
-##Usage
+## Usage
 ```
 ./e-crawler -h
 
@@ -23,7 +23,7 @@ Web crawler to extract e-mails from website
   -verbose
         Display more information
 ```
-##Example
+## Example
 ```
 ./e-crawler -target https://evilcorp.local -proxy http://127.0.0.1:8080 -insecure true
 2019/03/30 15:27:44 Spidering the target
