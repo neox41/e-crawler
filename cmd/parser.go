@@ -34,6 +34,31 @@ func parseObEmail(page string) {
 	for e := range emails {
 		ObEmails = append(ObEmails, strings.Replace(strings.Replace(emails[e], "[at]", "@", 1), "[dot]", ".", 1))
 	}
+
+	// mr (at) mattiareggiani.com
+	re = regexp.MustCompile(`[a-z0-9-._%+\-]+ \(at\) [a-z0-9-.\-]+\.[a-z]{1,}`)
+	emails = re.FindAllString(page, -1)
+	for e := range emails {
+		ObEmails = append(ObEmails, strings.Replace(emails[e], " (at) ", "@", 1))
+	}
+	// mr(at)mattiareggiani.com
+	re = regexp.MustCompile(`[a-z0-9-._%+\-]+\(at\)[a-z0-9-.\-]+\.[a-z]{1,}`)
+	emails = re.FindAllString(page, -1)
+	for e := range emails {
+		ObEmails = append(ObEmails, strings.Replace(emails[e], "(at)", "@", 1))
+	}
+	// mr (at) mattiareggiani (dot) com
+	re = regexp.MustCompile(`[a-z0-9-._%+\-]+ \(at\) [a-z0-9-.\-]+ \(dot\) [a-z]{1,}`)
+	emails = re.FindAllString(page, -1)
+	for e := range emails {
+		ObEmails = append(ObEmails, strings.Replace(strings.Replace(emails[e], " (at) ", "@", 1), " (dot) ", ".", 1))
+	}
+	// mr(at)mattiareggiani(dot)com
+	re = regexp.MustCompile(`[a-z0-9-._%+\-]+\(at\)[a-z0-9-.\-]+\(dot\)[a-z]{1,}`)
+	emails = re.FindAllString(page, -1)
+	for e := range emails {
+		ObEmails = append(ObEmails, strings.Replace(strings.Replace(emails[e], "(at)", "@", 1), "(dot)", ".", 1))
+	}
 	// TODO add other
 }
 func ParseEmail(page string) {

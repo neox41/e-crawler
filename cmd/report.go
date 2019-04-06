@@ -28,7 +28,7 @@ func printToConsole(emails, obEmails PairList) {
 	if len(obEmails) > 0 {
 		log.Println("Potential Emails Found:")
 		for _, email := range obEmails {
-			fmt.Printf("%s (%v)", email.Key, email.Value)
+			fmt.Printf("%s (%v)\n", email.Key, email.Value)
 		}
 	}
 }
