@@ -4,6 +4,8 @@ Web crawler to extract e-mails from website
 
 ## Usage
 ```
+go get github.com/mattiareggiani/e-crawler/cmd@latest
+
 ./e-crawler -h
 
 -domain value
