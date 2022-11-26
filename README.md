@@ -4,6 +4,9 @@ Web crawler to extract e-mails from website
 
 ## Usage
 ```
+go mod init main
+go mod tidy
+
 ./e-crawler -h
 
 -domain value
