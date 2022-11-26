@@ -1,4 +1,2 @@
-github.com/mattiareggiani/e-crawler v0.0.0-20190406140701-0d44408503da h1:AZvZ7W+pJ8lrUE6MZfszCoHHeUMHzdQPYNCJYECXEPw=
-github.com/mattiareggiani/e-crawler v0.0.0-20190406140701-0d44408503da/go.mod h1:cwxzE++LUujVm7BUATJmbul5CIvLfAcXgxg4+OLYwcg=
-golang.org/x/net v0.0.0-20221004154528-8021a29435af h1:wv66FM3rLZGPdxpYL+ApnDe2HzHcTFta3z5nsc13wI4=
-golang.org/x/net v0.0.0-20221004154528-8021a29435af/go.mod h1:YDH+HFinaLZZlnHAfSS6ZXJJ9M9t4Dl22yv3iI2vPwk=
+golang.org/x/net v0.2.0 h1:sZfSu1wtKLGlWI4ZZayP0ck9Y73K1ynO6gqzTdBVdPU=
+golang.org/x/net v0.2.0/go.mod h1:KqCZLdyyvdV855qA2rE3GC2aiw5xGR5TEjj8smXukLY=
