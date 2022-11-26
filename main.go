@@ -2,7 +2,7 @@ package main
 
 import (
 	"crypto/tls"
-	"github.com/mattiareggiani/e-crawler/cmd"
+	"main/cmd"
 	"flag"
 	"log"
 	"net"
