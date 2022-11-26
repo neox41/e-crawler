@@ -1,8 +1,5 @@
-module github.com/neox41/e-crawler/cmd
+module main
 
-go 1.19
+go 1.18
 
-require (
-	github.com/mattiareggiani/e-crawler v0.0.0-20190406140701-0d44408503da // indirect
-	golang.org/x/net v0.0.0-20221004154528-8021a29435af // indirect
-)
+require golang.org/x/net v0.2.0
